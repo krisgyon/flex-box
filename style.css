@@ -1,0 +1,37 @@
+.container {
+     width: 600px;
+     height: 300px;
+     border: 5px solid #333;
+     margin: 30px auto;
+     padding: 5px;
+     display: flex;
+     flex-direction: row; /*default row/ row-reverse/ column /column-reverse*/
+     flex-wrap: nowrap; /*default nowrap/ warp/ warp-reverse*/
+     justify-content: start; /*default start/ center/ end/ space-between/ space-around/ space-evenly*/
+
+     /*align-items: flex-start; /*default flex-start/ center/ flex-end/ stretch/ baseline*/
+
+     align-content: flex-start; /*default start/ center/ end/ stretch/ space-between/ space-around*/
+
+     align-self: auto; /*default auto/ flex-start/ center/ flex-end/ stretch/ baseline.    align-self khusus buat 1 element saja*/
+}
+
+.container div {
+     margin: 2px;
+     background-color: rgb(19, 133, 255);
+     flex: 1; /*keunggulan flex isi konten warna biru tidak perlu width dan height. flex = menggunakan align-item : stretch.*/
+}
+
+div .satu {
+     order: 2; /*order gawe urutan*/
+     flex-grow: 3; /*flex-grow gawe besar kecil ukuran*/
+}
+div .dua {
+     order: 1;
+}
+div .tiga {
+     order: 4;
+}
+div .empat {
+     order: 3;
+}
